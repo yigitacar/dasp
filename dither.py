@@ -28,7 +28,7 @@ def generate_dither(signal, step_size):
     # Add dither to the signal
     d_rect = dither1
     d_tri = dither1 + dither2
-    d_hp = dither1 + shifted_dither1
+    d_hp = dither1 - shifted_dither1
 
     return d_rect, d_tri, d_hp
 
